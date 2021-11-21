@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "name": "players",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "identification": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "professional": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "date_of_birth": {
+      "type": "date",
+      "required": true
+    },
+    "kind_of_handicap": {
+      "type": "enumeration",
+      "enum": [
+        "visual",
+        "fisica",
+        "intelectual",
+        "mental",
+        "auditiva",
+        "multipla"
+      ],
+      "required": true
+    },
+    "diagnosis": {
+      "model": "player-diagnosis"
+    }
+  }
+}

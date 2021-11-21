@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "player_diagnoses",
+  "info": {
+    "name": "player_diagnosis"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "professional": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "player": {
+      "model": "players"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
