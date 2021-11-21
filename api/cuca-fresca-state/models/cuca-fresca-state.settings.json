@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cuca_fresca_states",
+  "info": {
+    "name": "cuca_fresca__state"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "institute": {
+      "model": "institute"
+    },
+    "professional": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "player": {
+      "model": "players"
+    },
+    "game_type": {
+      "type": "string",
+      "required": true
+    },
+    "sequence_size": {
+      "type": "integer",
+      "required": true
+    },
+    "colors_quantity": {
+      "required": true,
+      "type": "integer"
+    },
+    "speed": {
+      "type": "string",
+      "required": true
+    },
+    "sound_type": {
+      "type": "string",
+      "required": true
+    },
+    "notes_text": {
+      "type": "string",
+      "required": true
+    },
+    "background_color": {
+      "type": "string",
+      "required": true
+    },
+    "music": {
+      "type": "string",
+      "required": true
+    },
+    "hits_quantity": {
+      "type": "integer"
+    },
+    "fails_quantity": {
+      "type": "integer"
+    },
+    "game_time": {
+      "type": "time"
+    }
+  }
+}

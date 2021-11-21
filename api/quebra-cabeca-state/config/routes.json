@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/quebra-cabeca-states",
+      "handler": "quebra-cabeca-state.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/quebra-cabeca-states/count",
+      "handler": "quebra-cabeca-state.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/quebra-cabeca-states/:id",
+      "handler": "quebra-cabeca-state.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/quebra-cabeca-states",
+      "handler": "quebra-cabeca-state.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/quebra-cabeca-states/:id",
+      "handler": "quebra-cabeca-state.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/quebra-cabeca-states/:id",
+      "handler": "quebra-cabeca-state.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
