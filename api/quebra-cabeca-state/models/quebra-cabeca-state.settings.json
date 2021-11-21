@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quebra_cabeca_states",
+  "info": {
+    "name": "quebra_cabeca__state",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "institute": {
+      "model": "institute"
+    },
+    "professional": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "player": {
+      "model": "players"
+    },
+    "game_type": {
+      "type": "string",
+      "required": true
+    },
+    "puzzle_background": {
+      "type": "string",
+      "required": true
+    },
+    "pieces_quantity": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "hits_quantity": {
+      "type": "integer",
+      "default": 0
+    },
+    "fails_quantity": {
+      "type": "integer",
+      "default": 0
+    },
+    "game_time": {
+      "type": "time",
+      "default": "00:00:00"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/player-diagnoses",
+      "handler": "player-diagnosis.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/player-diagnoses/count",
+      "handler": "player-diagnosis.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/player-diagnoses/:id",
+      "handler": "player-diagnosis.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/player-diagnoses",
+      "handler": "player-diagnosis.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/player-diagnoses/:id",
+      "handler": "player-diagnosis.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/player-diagnoses/:id",
+      "handler": "player-diagnosis.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
