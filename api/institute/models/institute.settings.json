@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "institutes",
+  "info": {
+    "name": "institute"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "users": {
+      "via": "institutes",
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}
