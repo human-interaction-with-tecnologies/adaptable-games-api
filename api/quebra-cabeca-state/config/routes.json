@@ -5,7 +5,7 @@
       "path": "/quebra-cabeca-states",
       "handler": "quebra-cabeca-state.find",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -13,7 +13,7 @@
       "path": "/quebra-cabeca-states/count",
       "handler": "quebra-cabeca-state.count",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -21,7 +21,7 @@
       "path": "/quebra-cabeca-states/:id",
       "handler": "quebra-cabeca-state.findOne",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -29,7 +29,7 @@
       "path": "/quebra-cabeca-states",
       "handler": "quebra-cabeca-state.create",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -37,7 +37,7 @@
       "path": "/quebra-cabeca-states/:id",
       "handler": "quebra-cabeca-state.update",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -45,7 +45,7 @@
       "path": "/quebra-cabeca-states/:id",
       "handler": "quebra-cabeca-state.delete",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     }
   ]

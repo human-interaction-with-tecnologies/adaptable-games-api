@@ -5,7 +5,7 @@
       "path": "/players",
       "handler": "players.find",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -13,7 +13,7 @@
       "path": "/players/count",
       "handler": "players.count",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -21,7 +21,7 @@
       "path": "/players/:id",
       "handler": "players.findOne",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -29,7 +29,7 @@
       "path": "/players",
       "handler": "players.create",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -37,7 +37,7 @@
       "path": "/players/:id",
       "handler": "players.update",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -45,7 +45,7 @@
       "path": "/players/:id",
       "handler": "players.delete",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     }
   ]

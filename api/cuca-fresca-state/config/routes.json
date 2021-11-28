@@ -5,7 +5,7 @@
       "path": "/cuca-fresca-states",
       "handler": "cuca-fresca-state.find",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -13,7 +13,7 @@
       "path": "/cuca-fresca-states/count",
       "handler": "cuca-fresca-state.count",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -21,7 +21,7 @@
       "path": "/cuca-fresca-states/:id",
       "handler": "cuca-fresca-state.findOne",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -29,7 +29,7 @@
       "path": "/cuca-fresca-states",
       "handler": "cuca-fresca-state.create",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -37,7 +37,7 @@
       "path": "/cuca-fresca-states/:id",
       "handler": "cuca-fresca-state.update",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -45,7 +45,7 @@
       "path": "/cuca-fresca-states/:id",
       "handler": "cuca-fresca-state.delete",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     }
   ]
