@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "cuca_fresca_states",
+  "collectionName": "ritmo_mania_states",
   "info": {
-    "name": "cuca_fresca__state"
+    "name": "Ritmo_mania__state",
+    "description": ""
   },
   "options": {
     "increments": true,

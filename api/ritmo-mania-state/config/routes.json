@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ritmo-mania-states",
+      "handler": "ritmo-mania-state.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ritmo-mania-states/count",
+      "handler": "ritmo-mania-state.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ritmo-mania-states/:id",
+      "handler": "ritmo-mania-state.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ritmo-mania-states",
+      "handler": "ritmo-mania-state.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ritmo-mania-states/:id",
+      "handler": "ritmo-mania-state.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ritmo-mania-states/:id",
+      "handler": "ritmo-mania-state.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
