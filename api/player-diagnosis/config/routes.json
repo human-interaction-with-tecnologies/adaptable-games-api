@@ -5,7 +5,7 @@
       "path": "/player-diagnoses",
       "handler": "player-diagnosis.find",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -13,7 +13,7 @@
       "path": "/player-diagnoses/count",
       "handler": "player-diagnosis.count",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -21,7 +21,7 @@
       "path": "/player-diagnoses/:id",
       "handler": "player-diagnosis.findOne",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -29,7 +29,7 @@
       "path": "/player-diagnoses",
       "handler": "player-diagnosis.create",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -37,7 +37,7 @@
       "path": "/player-diagnoses/:id",
       "handler": "player-diagnosis.update",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -45,7 +45,7 @@
       "path": "/player-diagnoses/:id",
       "handler": "player-diagnosis.delete",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     }
   ]

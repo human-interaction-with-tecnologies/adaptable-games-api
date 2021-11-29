@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/cuca-fresca-states",
-      "handler": "cuca-fresca-state.find",
+      "path": "/ritmo-mania-states",
+      "handler": "ritmo-mania-state.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/cuca-fresca-states/count",
-      "handler": "cuca-fresca-state.count",
+      "path": "/ritmo-mania-states/count",
+      "handler": "ritmo-mania-state.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/cuca-fresca-states/:id",
-      "handler": "cuca-fresca-state.findOne",
+      "path": "/ritmo-mania-states/:id",
+      "handler": "ritmo-mania-state.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/cuca-fresca-states",
-      "handler": "cuca-fresca-state.create",
+      "path": "/ritmo-mania-states",
+      "handler": "ritmo-mania-state.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/cuca-fresca-states/:id",
-      "handler": "cuca-fresca-state.update",
+      "path": "/ritmo-mania-states/:id",
+      "handler": "ritmo-mania-state.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/cuca-fresca-states/:id",
-      "handler": "cuca-fresca-state.delete",
+      "path": "/ritmo-mania-states/:id",
+      "handler": "ritmo-mania-state.delete",
       "config": {
         "policies": []
       }

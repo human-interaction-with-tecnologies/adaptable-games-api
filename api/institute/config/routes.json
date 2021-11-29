@@ -5,7 +5,7 @@
       "path": "/institutes",
       "handler": "institute.find",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -13,7 +13,7 @@
       "path": "/institutes/count",
       "handler": "institute.count",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -21,7 +21,7 @@
       "path": "/institutes/:id",
       "handler": "institute.findOne",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -29,7 +29,7 @@
       "path": "/institutes",
       "handler": "institute.create",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -37,7 +37,7 @@
       "path": "/institutes/:id",
       "handler": "institute.update",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     },
     {
@@ -45,7 +45,7 @@
       "path": "/institutes/:id",
       "handler": "institute.delete",
       "config": {
-        "policies": []
+        "policies": ["global::has-apikey"]
       }
     }
   ]
